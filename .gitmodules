@@ -1,0 +1,3 @@
+[submodule "php-login-advanced"]
+	path = php-login-advanced
+	url = https://github.com/panique/php-login-advanced.git
