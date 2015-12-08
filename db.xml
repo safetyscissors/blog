@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<databaseChangeLog
+  xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog
+                      http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd">
+
+
+
+	<changeSet id="user-table-1" author="andrew" runOnChange="false">
+    <comment> 
+      user table. mainly for login
+    </comment>
+
+    <createTable tableName="user">
+      <column name="userId" type="int" autoIncrement="true">
+          <constraints primaryKey="true" nullable="false" />
+      </column>
+
+      <column name="userName" type="varchar(100)">
+      </column>
+
+			<column name="userEmail" type="varchar(100)">
+      </column>
+
+      <column name="userHash" type="varchar(100)">
+      </column>
+
+      <column name="userSalt" type="varchar(100)">
+      </column>
+
+      <column name="userResetFlag" type="BOOLEAN">
+      </column>
+
+      <column name="userResetDate" type="datetime">
+      </column>
+    </createTable>
+  </changeSet>
+
+	<changeSet id="static-table-1" author="andrew" runOnChange="false">
+    <comment> 
+      static table. mainly for info pages
+    </comment>
+
+    <createTable tableName="staticPage">
+      <column name="staticPageId" type="int" autoIncrement="true">
+          <constraints primaryKey="true" nullable="false" />
+      </column>
+
+      <column name="staticPageMenuOrder" type="int">
+      </column>
+
+			<column name="staticPageMenuName" type="varchar(100)">
+      </column>
+
+      <column name="staticPagePageTitle" type="varchar(100)">
+      </column>
+
+      <column name="staticPageDesc" type="varchar(100)">
+      </column>
+
+      <column name="staticPageHtml" type="MEDIUMTEXT">
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="blog-table-1" author="andrew" runOnChange="false">
+    <comment> 
+      blog table. mainly for articles
+    </comment>
+
+    <createTable tableName="blog">
+      <column name="blogId" type="int" autoIncrement="true">
+          <constraints primaryKey="true" nullable="false" />
+      </column>
+
+      <column name="blogDate" type="datetime">
+      </column>
+
+			<column name="blogName" type="varchar(100)">
+      </column>
+
+      <column name="blogDesc" type="varchar(100)">
+      </column>
+
+      <column name="blogTitle" type="varchar(100)">
+      </column>
+
+			<column name="blogHtml" type="MEDIUMTEXT">
+      </column>
+
+			<column name="blogHideFlag" type="BOOLEAN">
+      </column>
+
+      <column name="blogPublishFlag" type="BOOLEAN">
+      </column>
+
+      <column name="blogPublishDate" type="datetime">
+      </column>
+    </createTable>
+  </changeSet>
+
+  <changeSet id="comment-table-1" author="andrew" runOnChange="false">
+    <comment> 
+      comment table. mainly for article comments
+    </comment>
+
+    <createTable tableName="comment">
+      <column name="commentId" type="int" autoIncrement="true">
+          <constraints primaryKey="true" nullable="false" />
+      </column>
+
+      <column name="commentFkId" type="int">
+      	<constraints nullable="false" foreignKeyName="fk_comment_id" references="blog(blogId)" deleteCascade="true" />
+      </column>
+
+      <column name="commentDate" type="datetime">
+      </column>
+
+			<column name="commentName" type="varchar(100)">
+      </column>
+
+      <column name="commentHtml" type="TEXT">
+      </column>
+
+      <column name="commentApproveFlag" type="BOOLEAN">
+      </column>
+
+      <column name="commentHideFlag" type="BOOLEAN">
+      </column>
+    </createTable>
+  </changeSet>
+
+
+</databaseChangeLog>
