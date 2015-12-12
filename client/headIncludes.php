@@ -5,3 +5,4 @@
 <script src='ckeditor/jquery-1.11.3.min.js'></script>
 <script src='ckeditor/adapters/jquery.js'></script>
 <script src='bootstrap/js/bootstrap.js'></script>
+<script src='client/js/request.js'></script>

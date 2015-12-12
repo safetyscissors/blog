@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteBase /blog/
+RewriteCond %{REQUEST_URI} !^/blog/bootstrap/
+RewriteCond %{REQUEST_URI} !^/blog/ckeditor/
+RewriteCond %{REQUEST_URI} !^/blog/client/
+RewriteCond %{REQUEST_URI} !^/blog/server/
+RewriteCond %{REQUEST_URI} !index\.php [NC]
+RewriteRule ^([^/]+)(.*)?$ index.php?path=$1$2 [L,NC,QSA]

@@ -82,3 +82,24 @@ body{
   font-size:2em;
   font-weight:600;
 }
+
+
+
+
+
+
+
+
+
+
+.goodFlash{
+  background-color:lightgreen;
+}
+.isLoggedIn{
+  opacity:1;
+  pointer-events:auto;
+}
+.requireLogin{
+  opacity:.3;
+  pointer-events: none;
+}

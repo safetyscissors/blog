@@ -128,3 +128,4 @@ $useruploadroot = "http://$_SERVER[HTTP_HOST]";
 $useruploadfolder = "ckeditor/plugins/imageuploader/uploads";
 $useruploadpath = "../../../$useruploadfolder/";
 $foldershistory[] = $useruploadfolder;
+$username = "math27182"; $password = 'e951783ce6387ef421b69a236ec3e6cb';
