@@ -1,3 +1,6 @@
 [submodule "php-login-advanced"]
 	path = php-login-advanced
 	url = https://github.com/panique/php-login-advanced.git
+[submodule "password_compat"]
+	path = password_compat
+	url = https://github.com/ircmaxell/password_compat.git

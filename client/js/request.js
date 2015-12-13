@@ -1,6 +1,6 @@
 var REQUEST = {
   isLoading:false,
-  serverAddress:'http://localhost:8888/blog/server/'
+  serverAddress:'/server/'
 };
 
 REQUEST.send = function(path ,method, callback, data){

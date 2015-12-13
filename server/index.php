@@ -99,7 +99,6 @@
     //get rid of extra directory depth
     array_shift($uri);
     array_shift($uri);
-    array_shift($uri);
     $uri=join("/",$uri);
 
     //get rid of param string

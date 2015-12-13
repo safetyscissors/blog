@@ -2,6 +2,7 @@
   require('authCheck.php');
   if(!isset($USER->id)) return;
   require('queries/userQueries.php');
+  require('password_compat.php');
   $PAGE->id='userCreate';
 
   $fields=array('email','name','password');

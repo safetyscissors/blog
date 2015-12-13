@@ -1,6 +1,6 @@
 <?php
 	require('queries/userQueries.php');
-
+	require('password_compat.php');
 	$fields=array('email','password');
 	$inputs=array();
 
