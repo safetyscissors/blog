@@ -39,7 +39,7 @@ function updatePageFast($DB, $title, $desc, $menuName, $pid){
   return $stmt;
 }
 
-function updatePage($DB, $title, $desc, $menuName, $html, $feature $pid){
+function updatePage($DB, $title, $desc, $menuName, $html, $feature, $pid){
   $stmt = $DB->prepare("UPDATE staticPage SET staticPagePageTitle=?, staticPageDesc=?, staticPageMenuName=?, staticPageHtml=? staticPageFeature=? WHERE staticPageId=?");
 
   if(!$stmt->bind_param('sssssi', $title, $desc, $menuName, $html, $feature, $pid)){

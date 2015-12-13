@@ -39,7 +39,7 @@
           HELPER FUNCTIONS
 \* ********************************************************************* */
   function setDebug(){
-    if($_GET['debug']=="true"){
+    if(isset($_GET['debug']) && $_GET['debug']=="true"){
       return true;
     }
     return false;
@@ -94,7 +94,7 @@
     returns string [method:path]
   */
   function getUri(){
-    $uri=explode("/",$_SERVER[REQUEST_URI]);
+    $uri=explode("/",$_SERVER['REQUEST_URI']);
 
     //get rid of extra directory depth
     array_shift($uri);
@@ -103,14 +103,20 @@
 
     //get rid of param string
     $uri=explode("?",$uri);
-    $params=$uri[1];
+
+    $params="";
+    if(count($uri)>1){
+        $params=$uri[1];
+    }
     $uri=$uri[0];
 
     //get GET params
+    if(strlen($params)>0){
     $params=split("&",$params);
     foreach($params as $param){
       $param=split("=",$param);
       $_GET[$param[0]]=$param[1];
+    }
     }
 
     $method=$_SERVER['REQUEST_METHOD'];
