@@ -226,3 +226,23 @@ body{
   font-weight:bold;
   line-height:130%;
 }
+
+
+#pageNotFound{
+  background:grey;
+  position:absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+}
+#pageNotFoundMessage{
+  font-family: 'Raleway', sans-serif;
+  font-size:2em;
+  color:#fff;
+  text-align: center;
+  top:40%;
+  width:100%;
+  position:absolute;
+
+}
