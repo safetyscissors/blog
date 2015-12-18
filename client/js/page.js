@@ -43,13 +43,14 @@ function setupPageActionBar(){
 	var url=window.location.href;
 	var urlParts=url.split('?');
 
+	var spacer='<div style="height:50px;position:absolute;" ></div>';
 	var admin='<a href="admin"><button>admin</button></a>';
 	var edit='<a href="'+url+'?edit=true"><button>edit</button></a>';
 	var view='<a href="'+urlParts[0]+'"><button>view</button></a>';
 	var show = '<button>show</button>';
 	var hide = '<button>hide</button>';
 
-	var output=admin;
+	var output=spacer+admin;
 	output+=($('#editing').val())?view:edit;
 
 	$('#pageActionBar').html(output);

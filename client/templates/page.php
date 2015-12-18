@@ -33,7 +33,7 @@
 ?>
 <!--
 <div id="pageLive">
-	<div id="pageActionBar" class="col-md-12" style="background:lightblue"></div>
+	<div id="pageActionBar" class="col-md-12"></div>
 	<div id="pageMessages"></div>
 	<form id="pageEditForm">
 		<input id="pageid" type="hidden" value="<?php echo $page->staticPageId; ?>">
@@ -51,7 +51,7 @@
 </div>
 -->
 <div class="row">
-  <div id="pageActionBar" class="col-md-12" style="background:lightblue"></div>
+  <div id="pageActionBar" class="col-md-12"></div>
   <div id="pageMessages" class="col-md-12"></div>
 </div>
 
