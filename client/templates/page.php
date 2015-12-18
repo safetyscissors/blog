@@ -31,25 +31,6 @@
 		}
 	}
 ?>
-<!--
-<div id="pageLive">
-	<div id="pageActionBar"></div>
-	<div id="pageMessages"></div>
-	<form id="pageEditForm">
-		<input id="pageid" type="hidden" value="<?php echo $page->staticPageId; ?>">
-		<input id="editing" type="hidden" value="<?php echo $edit; ?>">
-		<div id="editToggle" class="requireLogin">edit:<?php if($edit){echo 'on';}else{echo 'off';}  ?></div>
-		<div id="pageTitle"><?php echo contentify($page,$edit,'staticPagePageTitle'); ?></div>
-		<div id="pageDesc"><?php echo contentify($page,$edit,'staticPageDesc'); ?></div>
-		<div id="pageMenuName"><?php echo contentify($page,$edit,'staticPageMenuName'); ?></div>
-		<div id="pageFeature"><?php echo contentify($page,$edit,'staticPageFeature'); ?></div>
-		<?php if($edit) echo '<button id="previewButton">preview</button><br>' ?>
-
-		<div id="pageHtmlWrapper"><?php echo contentify($page,$edit,'staticPageHtml'); ?></div>
-	</form>
-
-</div>
--->
 <div class="row">
   <div id="pageActionBar" class="col-md-12"></div>
   <div id="pageMessages" class="col-md-12"></div>

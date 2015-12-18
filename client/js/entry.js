@@ -39,12 +39,11 @@ function setupActionBar(){
 	var admin='<a href="admin"><button>admin</button></a>';
 	var edit='<a href="'+url+'&edit=true"><button>edit</button></a>';
 	var view='<a href="'+urlParts[0]+'?id='+$('#blogid').val()+'"><button>view</button></a>';
-	var publish = '<button>publish</button>'
 	var show = '<button>show</button>';
 	var hide = '<button>hide</button>';
 
 	var output=admin;
 	output+=($('#editing').val())?view:edit;
 
-	$('#actionBar').html(output);
+	$('#pageActionBar').html(output);
 }

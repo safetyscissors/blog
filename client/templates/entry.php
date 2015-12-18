@@ -19,13 +19,13 @@
 		}
 		
 		if($fieldName != 'blogHtml'){
-			return "<input id='update".$fieldName."' type='text' value='".$blogRef->$fieldName."'>";
+			return "<input id='update".$fieldName."' style='color:#333' type='text' value='".$blogRef->$fieldName."'>";
 		}else{
 			return "<textarea name='updateHtml' id='updateHtml'>".$blogRef->$fieldName."</textarea>";
 		}
 	}
 ?>
-
+<!--
 <div id="blogLive">
 	<div id="actionBar" class="col-md-12" style="background:lightblue"></div>
 	<div id="blogMessages"></div>
@@ -44,6 +44,40 @@
 	</form>
 
 </div>
+-->
+
+
+<div class="row">
+  <div id="pageActionBar" class="col-md-12"></div>
+  <div id="pageMessages" class="col-md-12"></div>
+</div>
+
+<form id="blogEditForm">
+<div class="row">
+  <input id="blogid" type="hidden" value="<?php echo $blog->blogId; ?>">
+  <input id="editing" type="hidden" value="<?php echo $edit; ?>">
+  <input id="updateblogName" type="hidden" value="<?php echo $blog->blogName; ?>">
+
+  <div id="pageFeature" class="col-md-12">
+    <img id="pageFeatureImg" src='<?php echo $blog->blogName; ?>' />
+    <div id="pageFeatureFade"></div>
+  </div>
+  <div id="pageTitle">
+    <h1 class="pageTitleText"><strong><?php echo contentifyBlog($blog,$edit,'blogTitle'); ?></strong></h1>
+    <div id="pageDesc"><?php echo contentifyBlog($blog,$edit,'blogDesc'); ?></div>
+    <?php if($edit) echo "<div>".contentifyBlog($blog,$edit,'blogName')."</div>"; ?>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12 spacer" style="height:10%"></div>
+</div>
+
+<div class="row">
+  <div id="pageHtmlWrapper" class="col-md-10 col-md-offset-1"><?php echo contentifyBlog($blog,$edit,'blogHtml'); ?></div>
+
+</div>
+</form>
+
 
 <script src="ckeditor/ckeditor.js"></script>
 <script src="client/js/entry.js"></script>
