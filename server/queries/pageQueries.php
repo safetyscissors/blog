@@ -40,7 +40,7 @@ function updatePageFast($DB, $title, $desc, $menuName, $pid){
 }
 
 function updatePage($DB, $title, $desc, $menuName, $html, $feature, $pid){
-  $stmt = $DB->prepare("UPDATE staticPage SET staticPagePageTitle=?, staticPageDesc=?, staticPageMenuName=?, staticPageHtml=? staticPageFeature=? WHERE staticPageId=?");
+  $stmt = $DB->prepare("UPDATE staticPage SET staticPagePageTitle=?, staticPageDesc=?, staticPageMenuName=?, staticPageHtml=?, staticPageFeature=? WHERE staticPageId=?");
 
   if(!$stmt->bind_param('sssssi', $title, $desc, $menuName, $html, $feature, $pid)){
     return errorHandler("updatePage failed to bind parameter", 503);

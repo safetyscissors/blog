@@ -5,7 +5,8 @@
   <?php include('client/headIncludes.php') ?>
 </head>
 <body>
-<div class="container">
+<div class="container-fluid">
+  <?php include('client/menu.php') ?>
 	<?php include('client/templates/page.php') ?>
 	<?php include('client/templates/entry.php') ?>
 	<?php include('client/templates/admin.php') ?>

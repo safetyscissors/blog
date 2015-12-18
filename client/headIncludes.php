@@ -6,3 +6,5 @@
 <script src='ckeditor/adapters/jquery.js'></script>
 <script src='bootstrap/js/bootstrap.js'></script>
 <script src='client/js/request.js'></script>
+
+<link href='https://fonts.googleapis.com/css?family=Raleway|Lobster|Open+Sans' rel='stylesheet' type='text/css'>

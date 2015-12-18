@@ -8,16 +8,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#"><img src="client/tofu.gif" width="25px" style="float:left; margin-right:5px; margin-top:-5px;"> princess tofu</a>
+      <a class="navbar-brand lobsterFont" href="/"><img src="client/images/lobster-icon.gif" width="25px" style="float:left; margin-right:5px; margin-top:-3px;"> Lobster Linguistics</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="fonty" href="#">articles</a></li>
-        <li><a class="fonty" href="#">purpose</a></li>
-        <li><a class="fonty" href="#">say hi</a></li>
-        <li><a class="fonty" href="#">new?</a></li>
+        <li><a class="fonty" href="#">Articles</a></li>
+        <li><a class="fonty" href="#">About</a></li>
+        <li><a class="fonty" href="#">Resources</a></li>
+        <li><a class="fonty" href="#">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->

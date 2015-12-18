@@ -31,7 +31,7 @@
 
   //setup for query
   if(isset($inputs['html'])){
-    $stmt = updatePage($DB, $inputs['title'], $inputs['desc'], $inputs['name'], $inputs['html'], $inputs['feature'], $inputs['pageid']);  
+    $stmt = updatePage($DB, $inputs['title'], $inputs['desc'], $inputs['name'], $inputs['html'], $inputs['feature'], $inputs['pageid']);
   }else{
     $stmt = updatePageFast($DB, $inputs['title'], $inputs['desc'], $inputs['name'], $inputs['pageid']);  
   }
