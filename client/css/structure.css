@@ -229,6 +229,7 @@ body{
 #pageActionBar{
   position:absolute;
   top:50px;
+  z-index:5;
 }
 
 #pageNotFound{
@@ -239,13 +240,32 @@ body{
   height:100%;
   width:100%;
 }
-#pageNotFoundMessage{
+#pageNotFoundMessage {
   font-family: 'Raleway', sans-serif;
-  font-size:2em;
-  color:#fff;
+  font-size: 2em;
+  color: #fff;
   text-align: center;
-  top:40%;
-  width:100%;
-  position:absolute;
+  top: 40%;
+  width: 100%;
+  position: absolute;
+}
 
+
+
+#blogList{
+  list-style:none;
+}
+#blogList li{
+  float:left;
+  padding:5px 5px 20px 5px;
+  margin: 2px;
+  color: #333;
+}
+#blogList li:hover{
+  background:#eee;
+}
+#blogList li .blogListImg{
+  width:220px;
+  height:140px;
+  background:grey;
 }
