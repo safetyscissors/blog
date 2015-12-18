@@ -14,10 +14,10 @@
     <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav navbar-right">
-        <li><a class="fonty" href="#">Articles</a></li>
-        <li><a class="fonty" href="#">About</a></li>
-        <li><a class="fonty" href="#">Resources</a></li>
-        <li><a class="fonty" href="#">Contact</a></li>
+        <li><a class="fonty" href="articles">Articles</a></li>
+        <li><a class="fonty" href="about">About</a></li>
+        <li><a class="fonty" href="resources">Resources</a></li>
+        <li><a class="fonty" href="contact">Contact</a></li>
       </ul>
     </div><!-- /.navbar-collapse -->
   </div><!-- /.container-fluid -->
