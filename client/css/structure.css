@@ -227,7 +227,8 @@ body{
   line-height:130%;
 }
 #pageActionBar{
-  background:grey;
+  position:absolute;
+  top:50px;
 }
 
 #pageNotFound{
