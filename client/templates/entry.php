@@ -59,13 +59,13 @@
   <input id="updateblogName" type="hidden" value="<?php echo $blog->blogName; ?>">
 
   <div id="pageFeature" class="col-md-12">
-    <img id="pageFeatureImg" src='<?php echo $blog->blogName; ?>' />
+    <img id="pageFeatureImg" src='<?php echo $blog->blogFeature; ?>' />
     <div id="pageFeatureFade"></div>
   </div>
   <div id="pageTitle">
     <h1 class="pageTitleText"><strong><?php echo contentifyBlog($blog,$edit,'blogTitle'); ?></strong></h1>
     <div id="pageDesc"><?php echo contentifyBlog($blog,$edit,'blogDesc'); ?></div>
-    <?php if($edit) echo "<div>".contentifyBlog($blog,$edit,'blogName')."</div>"; ?>
+    <?php if($edit) echo "<div>".contentifyBlog($blog,$edit,'blogFeature')."</div>"; ?>
   </div>
 </div>
 <div class="row">

@@ -28,7 +28,7 @@
     echo "\r\n inputs:";
     echo json_encode($inputs);
   }
-
+var_dump($inputs);
   //setup for query
   if(!isset($inputs['html'])){
     $stmt = updateBlogAdmin($DB, $inputs['name'], $inputs['desc'], $inputs['title'], $inputs['blogid']);
