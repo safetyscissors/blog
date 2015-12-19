@@ -20,7 +20,8 @@ function getBlogList(){
 
 function tableRow(pid,blog){
   var row = '<a href="blog?id='+pid+'"><li>';
-  row += '<div class="blogListImg"></div>';
+  var imgsrc=blog['blogFeature'] || '';
+  row += '<div class="blogListImg"><img src="'+imgsrc+'"></div>';
   row += '<div class="blogListName"><h4>'+blog['blogName']+'</h4></div>';
   row += '<div class="blogListDesc">'+blog['blogDesc']+'</div>';
 console.log(blog);

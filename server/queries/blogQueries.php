@@ -12,7 +12,7 @@ function getBlog($DB, $bid){
 }
 
 function getListing($DB){
-  $stmt = $DB->prepare("SELECT blogId,blogDate,blogName,blogDesc,blogTitle FROM blog ORDER BY blogDate DESC LIMIT 10");
+  $stmt = $DB->prepare("SELECT blogId,blogDate,blogName,blogDesc,blogTitle,blogFeature FROM blog ORDER BY blogDate DESC LIMIT 10");
   return $stmt;
 }
 

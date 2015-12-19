@@ -7,7 +7,7 @@
   if(!$stmt->execute()) return errorHandler("failed to get this list $stmt->errno: $stmt->error");
   //format results
   $data = array();
-  $stmt->bind_result($data['blogId'],$data['blogDate'],$data['blogName'],$data['blogDesc'],$data['blogTitle']);
+  $stmt->bind_result($data['blogId'],$data['blogDate'],$data['blogName'],$data['blogDesc'],$data['blogTitle'],$data['blogFeature']);
 
   /* fetch values */
   $listResults = array();

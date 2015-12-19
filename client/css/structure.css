@@ -270,4 +270,9 @@ body{
   width:220px;
   height:140px;
   background:grey;
+  overflow:hidden;
+}
+
+#blogList li .blogListImg img{
+  width:100%;
 }
