@@ -22,8 +22,8 @@ function tableRow(pid,blog){
   var row = '<a href="blog?id='+pid+'"><li>';
   var imgsrc=blog['blogFeature'] || '';
   row += '<div class="blogListImg"><img src="'+imgsrc+'"></div>';
-  row += '<div class="blogListName"><h4>'+blog['blogName']+'</h4></div>';
-  row += '<div class="blogListDesc">'+blog['blogDesc']+'</div>';
+  row += '<div class="blogListName"><h4 class="wrapText">'+blog['blogName']+'</h4></div>';
+  row += '<div class="blogListDesc wrapText">'+blog['blogDesc']+'</div>';
 console.log(blog);
   /*
   row += '<td><input id="blogUpdateName'+pid+'" value="' + blog['blogName'] + '"></td>'

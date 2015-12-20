@@ -16,6 +16,11 @@ function getListing($DB){
   return $stmt;
 }
 
+function setNames($DB){
+  $stmt = $DB->prepare("SET NAMES utf8");
+  return $stmt;
+}
+
 function createBlog($DB, $name, $desc, $title){
   $stmt = $DB->prepare("INSERT INTO blog (blogName,blogDesc,blogTitle) VALUES (?,?,?)");
 

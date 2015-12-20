@@ -258,10 +258,16 @@ body{
   list-style:none;
 }
 #blogList li{
+  width:230px;
+  height:280px;
+  overflow:hidden;
   float:left;
   padding:5px 5px 20px 5px;
   margin: 2px;
   color: #333;
+}
+.wrapText{
+  word-wrap: break-word;
 }
 #blogList li:hover{
   background:#eee;
